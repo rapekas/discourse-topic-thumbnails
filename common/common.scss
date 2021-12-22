@@ -389,4 +389,12 @@
 
 .topic-list-thumbnail.has-thumbnail {
     border-radius: 20px;
+    max-height: 70px;
+    max-width:  70px;
+}
+
+.topic-thumbnails-list .topic-list-thumbnail .main-thumbnail,
+.topic-thumbnails-grid .topic-list-thumbnail .main-thumbnail,
+.topic-thumbnails-masonry .topic-list-thumbnail .main-thumbnail {
+  object-fit: cover;
 }
