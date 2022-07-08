@@ -393,8 +393,12 @@
     max-width:  70px;
 }
 
+// Do not upscale thumbnails
 .topic-thumbnails-list .topic-list-thumbnail .main-thumbnail,
 .topic-thumbnails-grid .topic-list-thumbnail .main-thumbnail,
-.topic-thumbnails-masonry .topic-list-thumbnail .main-thumbnail {
-  object-fit: cover;
+.topic-thumbnails-masonry .topic-list-thumbnail .main-thumbnail,
+.topic-thumbnails-minimal .topic-list-thumbnail .main-thumbnail {
+	width: max-content;
+	height: max-content;
+    object-fit: cover;
 }
